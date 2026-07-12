@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", Arial, sans-serif;
+}
+
+header {
+    background-color: antiquewhite;
+}
+
+nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 18px 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111;
+}
+
+.manu-bar {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 30px;
+}
+
+.manu-bar a {
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+    position: relative;
+    padding-bottom: 6px;
+}
+
+.manu-bar a.active {
+    color: #111;
+}
+
+.manu-bar a.active::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 3px;
+    border-radius: 2px;
+    
+}
+
+.register-btn {
+    background-color: #2f3fd6;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.hero {
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.55)
+        ),
+        url("../assets/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 620px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    max-width: 700px;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content h1 {
+    color: #ffffff;
+    font-size: 52px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.hero-content h1 em {
+    font-style: italic;
+    font-weight: 800;
+}
+
+.hero-content p {
+    color: #e6e6e6;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-content .register-btn {
+    padding: 14px 32px;
+}
+.speakers{
+    max-width: 1200px;
+    margin: 100px auto;
+
+}
+.speakers h2{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 50px;
+}
+.speaker-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+.speaker-card{
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.speaker-card img{
+    width: 100%;
+    display: block;
+}
+.speaker-card .category{
+    color: #2952e3;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.speaker-card h3{
+    margin: 10px 20px;
+    font-size: 24px;
+}
+
+.speaker-card .title{
+    margin: 0 20px 25px;
+    color: #666;
+    font-size: 14px;
+}
